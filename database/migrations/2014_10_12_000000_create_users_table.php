@@ -13,8 +13,9 @@ return new class extends Migration
     {
         Schema::create('user', function (Blueprint $table) {
             $table->char('username', 50)->primary();
-            $table->string('password', 18);
+            $table->string('password', 200);
             $table->enum('role', ['superadmin','dkm', 'jamaah']);
+            $table->timestamps();
         });
     }
 

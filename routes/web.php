@@ -1,10 +1,13 @@
 <?php
 
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\JenisPemasukanController;
 use App\Http\Controllers\JenisPengeluaranController;
 use App\Http\Controllers\PemasukanController;
 use App\Http\Controllers\PengeluaranController;
 use App\Http\Controllers\LogController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,6 +23,22 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::controller(AuthController::class)->group(function () {
+    Route::get('/auth', 'index');
+});
+
+
+Route::controller(DashboardController::class)->group(function () {
+    Route::get('/dashboard', 'index');
+});
+
+Route::controller(UserController::class)->group(function () {
+    Route::get('/user','index');
+    Route::post('/user/tambah', 'store');
+    Route::post('/user/{username}/edit', 'update');
+    Route::delete('/user/{id}/hapus', 'delete');
 });
 
 

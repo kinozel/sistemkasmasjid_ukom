@@ -1,0 +1,107 @@
+body {
+    background-color: #008870;
+
+}
+.card {
+    background-color: #008870;
+}
+.card {
+    box-shadow: 0px 4px 15px black; border-radius: 15px;
+}
+.custom-login-text {
+    margin-top: 20px;
+    color: #FBAF01; /* Warna teks */
+    font-size: 32px; /* Ukuran font */
+    font-family: 'Fredoka One', sans-serif; /* Keluarga font */
+    font-weight: 400; /* Ketebalan font */
+    word-wrap: break-word; /* Wrap kata jika melebihi lebar elemen */
+}
+.custom-login-text-2{
+    margin-top: 50px;
+    color: #FBAF01; /* Warna teks */
+    font-size: 32px; /* Ukuran font */
+    font-family: 'Fredoka One', sans-serif; /* Keluarga font */
+    font-weight: 400; /* Ketebalan font */
+    word-wrap: break-word; /* Wrap kata jika melebihi lebar elemen */
+}
+
+.custom-username-label {
+    margin-top: 10px;
+    color: white; /* Warna teks */
+    font-size: 15px; /* Ukuran font */
+    font-family: 'Fredoka One', sans-serif; /* Keluarga font */
+    font-weight: 400; /* Ketebalan font */
+    word-wrap: break-word; /* Wrap kata jika melebihi lebar elemen */
+}
+.custom-text-input {
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    box-shadow: none;
+    border-bottom: 5px solid #FBAF01;
+    border-radius: 0%;
+    &:focus {
+        background-color: transparent; 
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        outline: none;
+        box-shadow: none;
+        border-bottom: 5px solid #FBAF01;
+    }
+    margin-bottom: 10px;
+}
+
+.custom-login-button {
+    margin-top: 20px;
+    width: 100%;
+    height: 50px;
+    background: #FBAF01; 
+    border: none; 
+    border-radius: 30px; 
+    color: white; 
+    font-size: 18px; 
+    font-weight: 600; 
+    cursor: pointer; 
+}
+
+.custom-login-button:hover {
+    background: #FFC846; 
+}
+.custom-register-text {
+    margin-top: 10px;
+    color: white; 
+    font-size: 14px; /* Ukuran font teks */
+    font-family: 'Fredoka', sans-serif; /* Jenis font */
+    font-weight: 400; /* Ketebalan font */
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.custom-register-text span, a {
+    text-decoration: none; /* Garis bawah pada teks "Daftar" */
+    color: #FBAF01; /* Warna teks "Daftar" */
+    cursor: pointer; /* Ganti kursor saat mengarahkan ke "Daftar" */
+}
+
+.custom-register-text span:hover, a:hover {
+    text-decoration: none; /* Hapus garis bawah saat dihover */
+    color: #FFC846; /* Warna teks "Daftar" */
+
+}
+
+.card-body {
+    width: 90%; /* Sesuaikan dengan lebar yang Anda inginkan */
+    padding: 20px; /* Atur padding sesuai kebutuhan */
+    margin: 0 auto; /* Untuk mengatur posisi tengah secara horizontal */
+    
+}
+
+.navbar{
+    z-index: 1;
+}
+
+
+

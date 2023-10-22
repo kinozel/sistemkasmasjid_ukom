@@ -109,42 +109,62 @@
             </div>
             <div class="main" style="margin-top:30px;color:#BCBCBCC9;"> Menu
                 <div class="list-content">
-                    <a href="#">
+                    <a href="{{url('/dashboard')}}">
                         <span class="text1" style="color:white; font-size: 15px;">Dashboard</span>
                     </a>
                 </div>
                 <div class="list-content">
-                    <a href="#">
-                        <span class="text1" style="color:white; font-size: 15px;">Media</span>
+                    <a href="{{url('/jenis_pemasukan')}}">
+                        <span class="text1 " style="color:white; font-size: 15px;">Jenis Pemasukan</span>
                     </a>
                 </div>
                 <div class="list-content">
-                    <a href="#">
+                    <a href="{{url('/jenis_pengeluaran')}}">
+                        <span class="text1 " style="color:white; font-size: 15px;">Jenis Pengeluaran</span>
+                    </a>
+                </div>
+                <div class="list-content">
+                    <a href="{{url('/pemasukan')}}">
                         <span class="text1 " style="color:white; font-size: 15px;">Pemasukan</span>
                     </a>
                 </div>
                 <div class="list-content">
-                    <a href="#">
+                    <a href="{{url('/pengeluaran')}}">
                         <span class="text1" style="color: white; font-size: 15px;">Pengeluaran</span>
                     </a>
                 </div>
+                <div class="list-content">
+                    <a href="{{url('/user')}}">
+                        <span class="text1" style="color: white; font-size: 15px;">Akun</span>
+                    </a>
+                </div>
+                <?php
+                $d=date("D");
+                if ($d=="Fri" || $d== "Sat" || $d== "Sun")
+                echo "Happy weekday";
+                else {
+                echo "Goodluck with ur days!";
+                }
+                ?>
 
             </div>
 
-            <div class="navbar" style="margin-left:285px; margin-top: -335px; width: 80.3vw; height: 12vh; box-shadow: 0px 4px 10px black; background-color: rgba(189, 189, 189, 0.4); border-radius: 0px 0px 0px 15px; ">
+            <div class="navbar" style="margin-left:350px; margin-top: -415px; width: 80.3vw; height: 12vh; box-shadow: 0px 4px 10px black; background-color: rgba(189, 189, 189, 0.4); border-radius: 0px 0px 0px 15px; ">
                 
                 <div class="col-3" style="margin-top: 20px; margin-left:30px;">
                         <a href="#"><span style="font-size: 25px;color: #BCBCBCC9;">Home / </span></a>
                         <a href="#"><span style="font-size: 25px;color: white;"> Dashboard</span></a>
                 </div style>  
                 <div class="col-3">
-                <span style="font-size: 15px;color: black; margin-left:330px;"> Halo!</span>
+                <span style="font-size: 15px;color: black; margin-left:460px;"> Halo!</span>
 
                 <h1 class="m-auto mx-2"><img src="" alt=""></h1>
 
                 </div>      
                 <div>
                 <span style="font-size: 30px;color: #FBAF01; margin-left:-274px;" > Admin</span>
+                     
+                
 
                 </div>      
             </div>
