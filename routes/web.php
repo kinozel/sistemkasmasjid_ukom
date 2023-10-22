@@ -26,7 +26,9 @@ Route::get('/', function () {
 });
 
 Route::controller(AuthController::class)->group(function () {
-    Route::get('/auth', 'index');
+    Route::get('/auth', 'index')->name('auth.index');
+    Route::get('/auth/logout', 'logout')->name('auth.index');
+    Route::match(['get', 'post'], '/auth/login', 'login')->name('auth.login');
 });
 
 
@@ -34,7 +36,7 @@ Route::controller(DashboardController::class)->group(function () {
     Route::get('/dashboard', 'index');
 });
 
-Route::controller(UserController::class)->group(function () {
+Route::controller(UserController::class)->middleware('OnlySuperAdmin')->group(function () {
     Route::get('/user','index');
     Route::post('/user/tambah', 'store');
     Route::post('/user/{username}/edit', 'update');

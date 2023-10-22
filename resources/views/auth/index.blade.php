@@ -33,12 +33,14 @@
                     
                     <div class="col-md-6">
                         <div class="card-body">
-                            <!-- @if(Session::has('error'))
+                            @if(Session::has('error'))
                             <div class="alert alert-danger">
                                 {{ Session::get('error') }}
                             </div>
-                            @endif -->
-                            <form action="" method="POST">
+                            @endif
+                            <form action="{{ route('auth.login') }}" method="POST">
+
+
                                 @csrf 
                             <h5 class="card-title text-center custom-login-text-2">LOGIN</h5>
                             <div class="form-group">
@@ -63,7 +65,7 @@
         </div>
     </div>
 </div>
-
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 </body>
 
 </html>
